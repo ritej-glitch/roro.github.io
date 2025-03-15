@@ -1,0 +1,21 @@
+{
+  "name": "web-project",
+  "version": "1.0.0",
+  "description": "A simple web project showcasing a heart animation.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [
+    "heart",
+    "animation",
+    "web",
+    "project"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

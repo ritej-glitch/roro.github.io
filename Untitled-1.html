@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>love youu</title>
+    <h1><a href="heart.html"><p><button> made this for you &hearts;</button></p></a></h1>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #bebebe;
+        margin: 0;
+    }
+
+    .heart {
+        position: relative;
+        width: 100px;
+        height: 90px;
+    }
+
+    .heart::before,
+    .heart::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100px;
+        height: 150px;
+        border-radius: 100px 100px 0 0;
+        background: #bebebe;
+    }
+
+    .heart::before {
+        left: 100px;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+    }
+
+    .heart::after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+    }
+
+    .heart {
+        animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+        0%, 100% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="heart"></div>
+</body>
+</html>
